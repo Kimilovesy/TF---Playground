@@ -28,7 +28,7 @@ General Formula as shown below:
   2. Convolution Over volumn
    * Input: H x W x Channel | Filter size: f x f x channel | Output: O x O x **1**, the size of last dim is 1!! 
    
-   ![Con-2d](https://github.com/Kimilovesy/TF---Playground/blob/master/CNN/Screen%20Shot%202018-02-24%20at%2018.30.18.png)
+   ![Con-2d](https://github.com/Kimilovesy/TF---Playground/blob/3a99556405b3e25d184092858899022192690cb9/CNN/Screen%20Shot%202018-02-24%20at%2018.36.54.png)
    
    As can be seen, there are 27 multiplications, and generate only one number in the output. Besides, we may add one bias for one filter. **Notice: only one number!**
 
