@@ -41,4 +41,5 @@ The aim of the pooling layer is to decrease the dimension of the output.
 ## Fully Connected Layer
 
 # Why Convoultional?
-1. Share weights
+1. **Share weights:** a edge detector is not only useful a part of the image, but also for another part of images
+2. **Sparisty of connections:** In each layer, each output value depends only on a small number of inputs, which can decrease the risk of overfitting
