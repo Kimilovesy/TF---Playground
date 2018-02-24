@@ -1,5 +1,10 @@
 # Some important concepts
 ## Padding
+General Formula as shown below:
+
+![General Formula](https://github.com/Kimilovesy/TF---Playground/blob/8dedbeb7314d57026928fc7a957ee4190f100565/CNN/Screen%20Shot%202018-02-24%20at%2018.02.45.png)
+
+**Where, p is the padding size, stride is the step u cross over, f is the filter size.**
 
 1. Valid Padding: **No Padding** 
   * (n×n * f×f --> n-f+1×n-f+1), where f is the filter size, usually f is odd number
