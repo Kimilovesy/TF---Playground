@@ -4,7 +4,7 @@ General Formula as shown below:
 
 ![General Formula](https://github.com/Kimilovesy/TF---Playground/blob/8dedbeb7314d57026928fc7a957ee4190f100565/CNN/Screen%20Shot%202018-02-24%20at%2018.02.45.png)
 
-**Where, p is the padding size, stride is the step u cross over, f is the filter size.**
+**Where, p is the padding size, stride is the step u , f is the filter size.** 
 
 1. Valid Padding: **No Padding** 
   * (n×n * f×f --> n-f+1×n-f+1), where f is the filter size, usually f is odd number
@@ -13,7 +13,7 @@ General Formula as shown below:
 
 ![Image of Padding](https://github.com/Kimilovesy/TF---Playground/blob/master/CNN/Padding.png)
 
-## Stride
+
 
 
 
@@ -26,6 +26,7 @@ General Formula as shown below:
   Actually, it is not 'real' convoultion compared with theeory in signal processing, it is called **'cross-correlation'**.
   
   2. Convolution Over volumn
+   * Input: H x W x Channel | Filter size: f x f x channel | Output: O x O x **1**, the size of last dim is 1!! 
 
 ## Pooling Layer
 The aim of the pooling layer is to decrease the dimension of the output.
