@@ -18,7 +18,7 @@ with tf.name_scope("accuracy"):
  
  Instead of call sess.run(...) each time you want to visualize tensor, you can simply call the following function
  ```python
- sum = tf.summary.merge_all()
+ summ = tf.summary.merge_all()
  ```
 Then run the sum within the session. It will generate a 'event?' file in the path you specify. Then run the following code to show on the tensorboard.
 
