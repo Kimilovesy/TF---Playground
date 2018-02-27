@@ -1,10 +1,3 @@
-## Clear all
-
-```python
-tf.reset_default_graph()
-```
-**Note:** It does not only clear all the variables, but also all the operations.
-
 ## Tensorboard
 ### Visualize Graph
 First, you need to specify a writer.
@@ -27,4 +20,29 @@ with tf.name_scope("accuracy"):
  ```python
  sum = tf.summary.merge_all()
  ```
-Then run the sum within the session.
+Then run the sum within the session. It will generate a 'event?' file in the path you specify. Then run the following code to show on the tensorboard.
+
+```python
+tensorboard --logdir path/to/logdir 
+```
+
+## Save and restore the model
+In order to save the model for later use, you can first define a trainer as follows:
+```python
+saver = tf.train.Saver()
+
+```
+
+
+
+
+## Clear all
+
+```python
+tf.reset_default_graph()
+```
+**Note:** It does not only clear all the variables, but also all the operations.
+
+
+
+
