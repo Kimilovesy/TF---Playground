@@ -27,11 +27,15 @@ tensorboard --logdir path/to/logdir
 ```
 
 ## Save and restore the model
+### Save the model
 In order to save the model for later use, you can first define a trainer as follows:
 ```python
 saver = tf.train.Saver()
-
+saver.save(sess, path/to/save/model)
 ```
+
+### Restore the model
+
 
 
 
