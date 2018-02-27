@@ -22,7 +22,7 @@ with tf.name_scope("accuracy"):
  ```
 Then run the sum within the session. It will generate a 'event?' file in the path you specify. Then run the following code to show on the tensorboard.
 
-```python
+```shell
 tensorboard --logdir path/to/logdir 
 ```
 
