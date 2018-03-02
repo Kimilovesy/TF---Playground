@@ -1,8 +1,9 @@
 ## Tensorboard
 ### Visualize Graph
-First, you need to specify a writer.
+First, you need to specify a writer. Then use add graph command, run it after init all the tensors.
 ```python
-writer = tf.summary.FileWriter(path/to/save/logdir, sess.graph)
+writer = tf.summary.FileWriter(path/to/save/logdir)
+writer.add_graph(sess.graph)
 writer.close()
 ```
  The first para is path to save the logdir, and there are other methods based on the writer (e.g. add the graph). More information can be found [here](https://www.tensorflow.org/api_docs/python/tf/summary/FileWriter). Don't forget to close the writer to make sure you write all the log file completely.
