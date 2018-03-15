@@ -34,6 +34,10 @@ In order to save the model for later use, you can first define a trainer as foll
 saver = tf.train.Saver()
 saver.save(sess, path/to/save/model)
 ```
+It will save four types of files. 
+* checkpoint: keep track of all the models saved, and the first line is the latest model
+* Model.meta: contains the whole graph defined
+* Model.index + Model.data-00000-of-000001: all the values of trained variables such as the weights, gradients and all the variables saved.
 
 ### Restore the model
 
